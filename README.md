@@ -2,13 +2,16 @@
 Visualizing public data stream using different Web APIs and JS & CSS frameworks.
 [Demo - Data Visualization](http://people.rit.edu/sm2550/PublicDataViz/)
 
+
+### Sensors Used
+* [Soil Moisture Sensor](http://www.highcharts.com/demo/line-basic/dark-green)
+* [RHTO3 - Humidity and Temperature Sensor](http://www.highcharts.com/demo/line-basic/dark-green)
+
 ### Data Source
 
-Spark Cloud Events
-
-data.sparkfun.com
-
-Serial Port
+Spark Cloud Events - To display the status of soil ( Wet or Dry)
+data.sparkfun.com - To animate the Water Tank with plant.
+Serial Port - To stream Temperature and Humidity sensor data.
 
 ### Motivation
 
