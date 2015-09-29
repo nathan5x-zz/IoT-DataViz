@@ -86,7 +86,7 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Soil Moisture Sensor</h2>
                     <hr class="primary">
-                    <h5> Data Source: Serial Port | Polling Interval: 1000 ms </h5>
+                    <h5> Data Source: Spark Cloud Events & <a href="https://data.sparkfun.com/streams/0lLx07KKA4HY8y889g1q">Nathan5x Spark Station</a> | Sensor: <a href="https://www.sparkfun.com/products/13322"> SparkFun Soil Moisture Sensor </a> </h5>
                 </div>
             </div>
         </div>
@@ -112,28 +112,34 @@
                         </figure>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 soil-panel">
                     <div class="panel panel-success">
                         <div class="panel-heading"> Live Data Monitoring</div>
                         <div class="panel-body">
                             <div class="row text-center">
-                                <h5> Moisutre Level </h5>
+                                <h5> Moisture Level </h5>
                             </div>
                             <div class="row">
-                                <div class="col-lg-6 text-center">
+                                <div class="col-lg-4 text-center">
                                     <h1 id="smCurrentLevel" class="sensor-data"> 3100 </h1>
                                     <h4> Current </h4>
                                 </div>
 
-                                <div class="col-lg-6 text-center">
+                                <div class="col-lg-4 text-center">
+                                    <h1 id="smStatus" class="sensor-data"> Wet </h1>
+                                    <h4> *Status </h4>
+                                </div>
+
+                                <div class="col-lg-4 text-center">
                                     <h1 id="smPreviousLevel" class="sensor-data"> 3210 </h1>
                                     <h4> Previous </h4>
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class="container-fluid col-lg-12 text-center">
+                                <div class="container-fluid col-lg-12 text-right">
                                     <div id="soilColContainer"> </div>
+                                    <h6> *Requires CloudEventSource </h6>
                                 </div>
                             </div>
                         </div>
@@ -149,7 +155,7 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Humidity & Temperature</h2>
                     <hr class="primary">
-                    <h5> Data Source: <a href="https://data.sparkfun.com/streams/dZ4EVmE8yGCRGx5XRX1W"> Nathan5x Photon Cloud Station </a> | Polling Interval: 2000 ms </h5>
+                    <h5> Data Source: Serial Port using Socket | Requires Socket on NodeJS | Sensor: <a href="https://www.sparkfun.com/products/10167"> Humidity and Temperature Sensor - RHT03</a> </h5>
                 </div>
             </div>
         </div>
@@ -168,19 +174,19 @@
                                         <div class="row">
                                             <div class="container-fluid col-lg-6 text-center clock">
                                                 <div class="row">
-                                                  <div id="bLevelTempClock_H"> </div>
-                                                  <div id="bLevelTempClock_M"> </div>
-                                                  <div id="bLevelTempClock_S"> </div>
+                                                    <div id="bLevelTempClock_H"> </div>
+                                                    <div id="bLevelTempClock_M"> </div>
+                                                    <div id="bLevelTempClock_S"> </div>
                                                 </div>
                                                 <h4 id="tempTimeText">  </h4>
                                             </div>
 
                                             <div class="container-fluid col-lg-6 text-center clock">
-                                              <div class="row">
-                                                <div id="bLevelHumidClock_H"> </div>
-                                                <div id="bLevelHumidClock_M"> </div>
-                                                <div id="bLevelHumidClock_S"> </div>
-                                              </div>
+                                                <div class="row">
+                                                    <div id="bLevelHumidClock_H"> </div>
+                                                    <div id="bLevelHumidClock_M"> </div>
+                                                    <div id="bLevelHumidClock_S"> </div>
+                                                </div>
                                                 <h4 id="humidTimeText">  </h4>
                                             </div>
                                         </div>
@@ -223,11 +229,11 @@
         <div class="container-fluid chart-area">
             <div class="row">
                 <div class="col-lg-6 text-center">
-                    <img src="img/CircuitLayout01.jpg" width="90%" height="380"/>
+                    <img src="img/CircuitLayout01.jpg" width="90%" height="380" />
                 </div>
 
                 <div class="col-lg-6 text-center">
-                   <img src="img/CircuitLayout02.jpg" width="90%" height="380"/>
+                    <img src="img/CircuitLayout02.jpg" width="90%" height="380" />
                 </div>
             </div>
         </div>
