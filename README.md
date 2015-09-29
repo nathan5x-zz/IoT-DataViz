@@ -1,12 +1,13 @@
 ## Internet of Things - Live Data Visualization from Sparkfun Sensors
 Visualizing IoT data of SparkFun sensors using different Web APIs, JavaScript libraries & CSS 3 (3D Transforms).
-[Demo - Data Visualization](http://nathan5x.github.io/IoT-DataViz/)
+
+####[Demo - Data Visualization](http://nathan5x.github.io/IoT-DataViz/)
 
 ### Description
 ---
 This data visualization mainly displays data that are received from two sensors - SparkFun Soil Moisture sensor and RHT03 Temperature and Humidity sensor. There are three different data sources mainly used in this data visualization.
 
-* data.sparkfun.com - soilsensor.ino file publishes the soil moisture data through Phant server APIs from Photon. Based on these data it displays the water level in a water tank with different colors of the plant and bar chart of different data recorded.
+* data.sparkfun.com - soilsensor.ino file publishes the soil moisture data through Phant server APIs from Photon. Based on these data it displays the water level in a water tank with different colors of the plant and bar chart of different data recorded. If it goes to dry state user will get an email, like an alert instead of SMS.
 
 * Particle Cloud Events - using Spark.publish() and Spark.subscribe() soil moisture sensor data are published to Particle Cloud Events that can be monitored through particle dashboard. Using EventSource JavaScript API these events are subscribed (through event listeners) and soil moisture status (wet or dry) is displayed.
 
