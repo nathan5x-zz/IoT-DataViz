@@ -1,4 +1,4 @@
-### Internet of Things
+### Experiments with Internet of Things
 ##Live Data Visualization from Sparkfun Sensors
 Visualizing IoT data of SparkFun sensors using different Web APIs, JavaScript libraries & CSS 3 (3D Transforms).
 
@@ -12,7 +12,7 @@ This data visualization mainly displays data that are received from two sensors 
 
 * Particle Cloud Events - using Spark.publish() and Spark.subscribe() soil moisture sensor data are published to Particle Cloud Events that can be monitored through particle dashboard. Using EventSource JavaScript API these events are subscribed (through event listeners) and soil moisture status (wet or dry) is displayed. jQuery API updates the status of soil moisture.
 
-* Serial Port - By reading digital pin D6, RHT03 sensor data are written to serial port from soilsensor.ino file.  Using Socket.IO in NodeJS serial port values have been red and sent to line chart that displays temperature and humidity data as a stream. In previous [visualization] (http://nathan5x.github.io/PublicDataViz/) this chart does buffering the data that comes from data.sparkfun.com, in this experiment data is live and instant update from Photon. 
+* Serial Port - By reading digital pin D6, RHT03 sensor data are written to serial port from soilsensor.ino file.  Using Socket.IO in NodeJS serial port values have been red and sent to line chart that displays temperature and humidity data as a stream. In previous [visualization] (http://nathan5x.github.io/PublicDataViz/) this chart does buffering the data that comes from data.sparkfun.com, in this experiment data is live and instant update from Photon.
 
 ### Components Used
 ---
