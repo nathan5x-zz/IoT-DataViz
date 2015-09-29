@@ -8,11 +8,11 @@ Visualizing IoT data of SparkFun sensors using different Web APIs, JavaScript li
 ---
 This data visualization mainly displays data that are received from two sensors - SparkFun Soil Moisture sensor and RHT03 Temperature and Humidity sensor. There are three different data sources mainly used in this data visualization.
 
-* data.sparkfun.com - soilsensor.ino file publishes the soil moisture data through Phant server APIs from Photon. Based on these data it displays the water level in a water tank with different colors of the plant and bar chart of different data recorded. If it goes to dry state user will get an email, like an alert instead of SMS.
+* data.sparkfun.com - Using the value from A0 pin, soilsensor.ino file publishes the soil moisture data through Phant server APIs from Photon. Based on these data it displays the water level in a water tank with different colors of the plant and bar chart of different data recorded. If it goes to dry state user will get an email, like an alert instead of SMS. Custom CSS 3D transforms and transitions are used to display the water level dynamic animation.
 
-* Particle Cloud Events - using Spark.publish() and Spark.subscribe() soil moisture sensor data are published to Particle Cloud Events that can be monitored through particle dashboard. Using EventSource JavaScript API these events are subscribed (through event listeners) and soil moisture status (wet or dry) is displayed.
+* Particle Cloud Events - using Spark.publish() and Spark.subscribe() soil moisture sensor data are published to Particle Cloud Events that can be monitored through particle dashboard. Using EventSource JavaScript API these events are subscribed (through event listeners) and soil moisture status (wet or dry) is displayed. jQuery API updates the status of soil moisture.
 
-* Serial Port - RHT03 sensor data are written to serial port from soilsensor.ino file.  Using Socket.IO in NodeJS serial port values have been red and sent to line chart that displays temperature and humidity data as a stream.
+* Serial Port - By reading digital pin D6, RHT03 sensor data are written to serial port from soilsensor.ino file.  Using Socket.IO in NodeJS serial port values have been red and sent to line chart that displays temperature and humidity data as a stream. In previous [visualization] (http://nathan5x.github.io/PublicDataViz/) this chart does buffering the data that comes from data.sparkfun.com, in this experiment data is live and instant update from Photon. 
 
 ### Components Used
 ---
