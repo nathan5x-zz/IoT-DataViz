@@ -1,37 +1,41 @@
 ## Internet of Things - Live Data Visualization from Sparkfun Sensors
-Visualizing IoT data from SparkFun sensors using different Web APIs, JavaScript & CSS frameworks.
+Visualizing IoT data of SparkFun sensors using different Web APIs, JavaScript libraries & CSS 3 (3D Transforms).
 [Demo - Data Visualization](http://nathan5x.github.io/IoT-DataViz/)
----
-### Description
-This data visualization is for displaying data from two sensors - SparkFun Soil Moisture sensor and RHT03 Temperature and Humidity sensor. There are three different data sources mainly used in this data visualization.
 
-* data.sparkfun.com - soilsensor.ino file publishes the soil moisture data through Phant server APIs from Photon. Based on these data it displays the water level in a water tank with different color of the plant and bar chart of different data recorded.
+### Description
+---
+This data visualization mainly displays data that are received from two sensors - SparkFun Soil Moisture sensor and RHT03 Temperature and Humidity sensor. There are three different data sources mainly used in this data visualization.
+
+* data.sparkfun.com - soilsensor.ino file publishes the soil moisture data through Phant server APIs from Photon. Based on these data it displays the water level in a water tank with different colors of the plant and bar chart of different data recorded.
 
 * Particle Cloud Events - using Spark.publish() and Spark.subscribe() soil moisture sensor data are published to Particle Cloud Events that can be monitored through particle dashboard. Using EventSource JavaScript API these events are subscribed (through event listeners) and soil moisture status (wet or dry) is displayed.
 
-* Serial Port - RHT03 sensor data are written to serial port from soilsensor.ino file.  Using Socket.IO in NodeJS serial port values have been red and sent to line chart that displays temperature and humidity data as a stream. 
+* Serial Port - RHT03 sensor data are written to serial port from soilsensor.ino file.  Using Socket.IO in NodeJS serial port values have been red and sent to line chart that displays temperature and humidity data as a stream.
 
 ### Components Used
 ---
-#### Kit
+##### Kit
 Sparkfun Photon Kit
 
-#### Sensors
+##### Sensors
 * [Soil Moisture Sensor](https://www.sparkfun.com/products/13322)
 * [RHTO3 - Humidity and Temperature Sensor](https://www.sparkfun.com/products/10167)
 
-#### LEDs
+##### LEDs
 Standard Green, Red and Yellow LEDs
 
-#### Resistors
+##### Resistors
 4x 1K Ohm resistors
 
+[Circuit layouts can be viewed here](https://github.com/nathan5x/IoT-DataViz/tree/master/CircuitLayouts)
 
 ### Data Source
 ---
-Spark Cloud Events - To display the status of soil moisture (wet or dry)
-data.sparkfun.com - To animate the Water Tank with plant.
-Serial Port - To stream Temperature and Humidity sensor data.
+* Spark Cloud Events - To display the status of soil moisture (wet or dry).
+
+* data.sparkfun.com - To animate the Water Tank with plant.
+
+* Serial Port - To stream Temperature and Humidity sensor data.
 
 ### Motivation
 ---
