@@ -1,7 +1,7 @@
 ### Internet of Things
 ##Live Data Visualization from Sparkfun Sensors
 Visualizing IoT data of SparkFun sensors using different Web APIs, JavaScript libraries & CSS 3 (3D Transforms).
-
+---
 ####[Demo - Data Visualization](http://nathan5x.github.io/IoT-DataViz/)
 
 ### Description
