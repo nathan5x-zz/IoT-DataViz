@@ -3,8 +3,8 @@
 #include <string.h>
 
 const char server[] = "data.sparkfun.com"; // Phant destination server
-const char publicKey[] = "0lLx07KKA4HY8y889g1q"; // Phant public key
-const char privateKey[] = "D6xpBzYY1JFEoJooWpNY"; // Phant private key
+const char publicKey[] = "xxxxxx"; // Phant public key
+const char privateKey[] = "xxxx"; // Phant private key
 
 TCPClient client;
 Phant phant(server, publicKey, privateKey); // Create a Phant objec
