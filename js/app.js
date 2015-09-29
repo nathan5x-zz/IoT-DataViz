@@ -244,7 +244,7 @@ $(document).ready(function() {
                     var nData = globalData[j];
                     if (highTemp < nData.tempf) {
                         highTemp = nData.tempf;
-                        $('#highTempText').html(highTemp + '&#176;C');
+                        $('#highTempText').html(highTemp + '&#176;F');
                         updateClock(nData.measurementTime, 'Temp');
                         $('#tempTimeText').html(nData.measurementTime);
                     }
