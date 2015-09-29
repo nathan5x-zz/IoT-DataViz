@@ -1,15 +1,28 @@
 ## Internet of Things - Live Data Visualization from Sparkfun Sensors
-Visualizing public data stream using different Web APIs and JS & CSS frameworks.
-[Demo - Data Visualization](http://people.rit.edu/sm2550/PublicDataViz/)
+Visualizing different data from SparkFun sensors using different Web APIs, JavaScript & CSS frameworks.
+[Demo - Data Visualization](http://nathan5x.github.io/IoT-DataViz/)
+
+### Description
 
 
-### Sensors Used
-* [Soil Moisture Sensor](http://www.highcharts.com/demo/line-basic/dark-green)
-* [RHTO3 - Humidity and Temperature Sensor](http://www.highcharts.com/demo/line-basic/dark-green)
+
+### Components Used
+#### Kit
+Sparkfun Photon Kit
+
+#### Sensors
+* [Soil Moisture Sensor](https://www.sparkfun.com/products/13322)
+* [RHTO3 - Humidity and Temperature Sensor](https://www.sparkfun.com/products/10167)
+
+#### LEDs
+Standard Green, Red and Yellow LEDs
+
+#### Resistors
+4x 1K Ohm resistors
 
 ### Data Source
 
-Spark Cloud Events - To display the status of soil ( Wet or Dry)
+Spark Cloud Events - To display the status of soil moisture (wet or dry)
 data.sparkfun.com - To animate the Water Tank with plant.
 Serial Port - To stream Temperature and Humidity sensor data.
 
