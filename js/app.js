@@ -358,7 +358,7 @@ $(document).ready(function() {
 
     var previousLevel = 0;
     var currentLevel = 0;
-    var soilMoisturePollTimer = window.setInterval(getSoilData, 500);
+    var soilMoisturePollTimer = window.setInterval(renderSoilVisualization, 1500);
     var previousReadingTime = "";
 
     function getSoilData() {
@@ -377,14 +377,15 @@ $(document).ready(function() {
         });
     }
 
-    function renderSoilVisualization(moistureData) {
+    //function renderSoilVisualization(moistureData) {
+    function renderSoilVisualization() {
 
-        var wLevel = Math.floor(moistureData.moisture * .08); //  Math.random() * (250 - 0) + 0;
+        var wLevel =  Math.random() * (250 - 0) + 0; //Math.floor(moistureData.moisture * .08);
         previousLevel = currentLevel;
         currentLevel = (wLevel / 2.5).toFixed(2);
         var wLevelColor = "green";
         var wLevelTop = wLevel - 125;
-        var mlDate = new Date(moistureData.timestamp);
+        var mlDate = new Date("Thu Oct  1 13:50:45 2015");//new Date(moistureData.timestamp);
         var dateTimeString = mlDate.toLocaleTimeString();
 
         if (wLevel >= 170) {
